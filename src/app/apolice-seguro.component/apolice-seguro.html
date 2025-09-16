@@ -1,0 +1,10 @@
+<h2>Apólice de Seguro</h2>
+<input [(ngModel)]="nome" placeholder="Nome">
+<select [(ngModel)]="sexo">
+  <option value="masculino">Masculino</option>
+  <option value="feminino">Feminino</option>
+</select>
+<input type="number" [(ngModel)]="idade" placeholder="Idade">
+<input type="number" [(ngModel)]="valorAutomovel" placeholder="Valor do Automóvel">
+<button (click)="calcularApolice()">Calcular</button>
+<p>Valor da Apólice: R$ {{ valorApolice.toFixed(2) }}</p>
